@@ -2,4 +2,4 @@
 
 This GitHub repository is dedicated to sharing a variety of materials and projects related to statistics, aimed at helping you gain a deeper understanding of this fascinating field.
 
-1. [Descriptive Statistics](https://github.com/caiosaldanha/statistics/01_descriptive_statistics.ipynb)
+1. [Descriptive Statistics](./01_descriptive_statistics.ipynb)
