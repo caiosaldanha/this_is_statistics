@@ -1,9 +1,9 @@
-## Descriptive Statistics
-- Measures of central tendency
+## Descriptive Statistics - ok
+- Measures of central tendency - ok
   - Mean
   - Median
   - Mode
-- Measures of dispersion
+- Measures of dispersion - ok
   - Range
   - Variance
   - Standard deviation
@@ -31,7 +31,7 @@
 - Other sampling techniques
 
 ## Regression Analysis
-- Linear regression
+- Linear regression - ok
 - Logistic regression
 - Multiple regression
 - Model evaluation and interpretation
