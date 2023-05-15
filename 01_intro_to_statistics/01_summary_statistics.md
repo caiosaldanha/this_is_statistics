@@ -1,9 +1,9 @@
 # Summary Statistics
 
 1. What Is Statistics: the practice and study of collecting and analyzing data
-    
+
     There are 2 main branches of statistics:
-    
+
     1. Descriptive Statistics: focuses on describing and summarizing the data at hand
     2. Inferential Statistics: uses the data at hand, which is called sample data, to make inferences about a larger population
 2. Types of data
@@ -19,26 +19,26 @@
     1. Histograms: takes a bunch of data points and separates them into bins, or ranges of values.
     2. Measures of center
         1. Mean: To calculate mean, we add up all the numbers of interest and divide by the total number of data points. (more sensitive to extreme values)
-            
+
             ```python
             import numpy as np
             np.mean(df['column'])
             ```
-            
+
         2. Median: is the value where 50% of the data is lower than it, and 50% of the data is higher
-            
+
             ```python
             import numpy as np
             np.median(df['column'])
             ```
-            
+
         3. Mode: is the most frequent value in the data.
-            
+
             ```python
             import statistics
             statistics.mode(df['column'])
             ```
-            
+
     3. Skew
         1. When data is skewed, the mean and median are different. The mean is pulled in the direction of the skew, so it's lower than the median on the left-skewed data, and higher than the median on the right-skewed data. Because the mean is pulled around by the extreme values, it's better to use the median since it's less affected by outliers.
 6. Measures of Spread
@@ -48,29 +48,29 @@
     4. Quantiles (Percentiles):  
         1. Boxplots use quartiles
         2. Quantiles using np.linspace(start, stop, numofintervals)
-            
+
             ```python
             np.linspace(start, stop, numofintervals)
             ```
-            
+
             ```python
             np.quantile(df[’column’], [list of quantile])
             ```
-            
+
     5. Interquartile range (IQR): It's the distance between the 25th and 75th percentile, which is also the height of the box in a boxplot. We can calculate it using the quantile function, or using the iqr function from scipy-dot-stats.
-        
+
         ```python
         from scipy.stats import iqr
         iqr(df['column'])
         ```
-        
+
     6. Outliers: are data points that are substantially different from the others.
         1. A rule that's often used is that any data point less than the first quartile minus 1-point-5 times the IQR is an outlier, as well as any point greater than the third quartile plus 1-point-5 times the IQR.
-            
+
             $$
             data < Q1 -1.5 \times IQR \\ or \\ data > Q1 +1.5 \times IQR
             $$
-            
+
             ```python
             from scipy.stats import iqr
             
@@ -81,9 +81,9 @@
             
             df[(df['column'] < lower_treshold) | (df['column'] > upper_treshold)]
             ```
-            
+
         2. All in one go
-            
+
             ```python
             df['column'].describe()
             ```
