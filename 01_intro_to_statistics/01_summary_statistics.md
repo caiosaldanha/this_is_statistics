@@ -68,7 +68,15 @@
         1. A rule that's often used is that any data point less than the first quartile minus 1-point-5 times the IQR is an outlier, as well as any point greater than the third quartile plus 1-point-5 times the IQR.
 
             $$
-            data < Q1 -1.5 \times IQR \\ or \\ data > Q1 +1.5 \times IQR
+            data < Q1 -1.5 \times IQR 
+            $$
+            
+            $$
+            \\ or 
+            $$
+            
+            $$
+            \\ data > Q1 +1.5 \times IQR
             $$
 
             ```python
