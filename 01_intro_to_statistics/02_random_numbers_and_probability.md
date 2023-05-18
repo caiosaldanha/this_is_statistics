@@ -2,11 +2,9 @@
 
 1. Measuring Chance
     1. We can measure the chances of an event using probability. We can calculate the probability of some event by taking the number of ways the event can happen and dividing it by the total number of possible outcomes.
-
         $$
         P(\text{event}) = \frac{\text{\# ways event can happen}}{\text{total \# of possible outcomes}}
         $$
-
 2. Sampling from a DataFrame
 
     ```python
