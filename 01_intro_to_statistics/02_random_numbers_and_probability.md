@@ -3,9 +3,7 @@
 1. Measuring Chance
     1. We can measure the chances of an event using probability. We can calculate the probability of some event by taking the number of ways the event can happen and dividing it by the total number of possible outcomes.
         
-        $$
-        P(\text{event}) = \frac{\text{number ways event can happen}}{\text{total number of possible outcomes}}
-        $$
+        $$P(\text{event}) = \frac{\text{number ways event can happen}}{\text{total number of possible outcomes}}$$
         
 2. Sampling from a DataFrame
 
@@ -71,13 +69,9 @@
     2. Other probabilities: We could also have a coin that's heavier on one side than the other, so the probability of getting heads is only 25%. To simulate flips with this coin, we'll adjust the second argument of binom.rvs to 0.25
     3. The binomial distribution can be described using two parameters, n and p. n represents the total number of trials being performed, and p is the probability of success. n and p are also the third and second arguments of binom.rvs
 
-    $$
-    n\text{: total number of trials}
-    $$
+    $$n\text{: total number of trials}$$
 
-    $$
-    p\text{: probability of success}
-    $$
+    $$p\text{: probability of success}$$
 
     ```python
     binom.rvs(# of coins, p [probability of success], size = n [total number of trials])
@@ -87,9 +81,7 @@
 
     1. To get the probability of getting 7 heads out of 10 coins, we can use binom.pmf. The first argument is the number of heads or successes. The second argument is the number of trials, n, and the third is the probability of success, p. If we flip 10 coins, there's about a 12% chance that exactly 7 of them will be heads.
 
-        $$
-        P(\text{heads = num})
-        $$
+        $$P(\text{heads = num})$$
 
         ```python
         binom.pmf(num success[heads], num trials, prob of heads) #Probability Mass Function
@@ -98,9 +90,7 @@
 
     2. binom.cdf gives the probability of getting a number of successes less than or equal to the first argument. The probability of getting 7 or fewer heads out of 10 coins is about 95%.
 
-        $$
-        P(\text{heads} \le \text{num})
-        $$
+        $$P(\text{heads} \le \text{num})$$
 
         ```python
         binom.cdf(num success[heads], num trials, prob of heads) #Cumulative distribution function
@@ -109,9 +99,7 @@
 
     3. We can take 1 minus the probability of getting 7 or fewer heads to get the probability of a number of successes greater than the first argument.
 
-        $$
-        P(\text{heads} \gt \text{num})
-        $$
+        $$P(\text{heads} \gt \text{num})$$
 
         ```python
         1 - binom.cdf(num success[heads], num trials, prob of heads) #Cumulative distribution function
@@ -120,8 +108,6 @@
 
     4. The expected value of the binomial distribution can be calculated by multiplying n times p. The expected number of heads we'll get from flipping 10 coins is 10 times 0-point-5, which is 5.
 
-        $$
-        \text{Expected value} = n \times p
-        $$
+        $$\text{Expected value} = n \times p$$
 
     5. It's important to remember that in order for the binomial distribution to apply, each trial must be independent, so the outcome of one trial shouldn't have an effect on the next.
