@@ -1,4 +1,4 @@
-# Random Numbers and Probability
+# 2. Random Numbers and Probability
 
 1. Measuring Chance
     1. We can measure the chances of an event using probability. We can calculate the probability of some event by taking the number of ways the event can happen and dividing it by the total number of possible outcomes.
