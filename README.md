@@ -1,5 +1,7 @@
 # This is Statistics
 
+<h3 align='left' style='color: red;'>Writing process undergoing...</h3>
+
 In this book I share practical knowledge aplying statistics with python.
 
 ### Chapter 1
