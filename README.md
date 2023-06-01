@@ -1,8 +1,24 @@
-# This is Statistics
+# This is Statistics by Caio Saldanha
+A book about applied statistics with python.
 
-<h3 align='left' style='color: red;'>Writing process undergoing...</h3>
 
-In this book I share practical knowledge aplying statistics with python.
+### Author
+
+[@caiosaldanha](https://www.github.com/caiosaldanha)
+
+
+### Acknowledgements
+
+ ```diff
+In development
+ ```
+
+### License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+# Summary
 
 ### Chapter 1
 
@@ -10,8 +26,10 @@ In this book I share practical knowledge aplying statistics with python.
 
 2. [Random Numbers and Probability](./01_intro_to_statistics/02_random_numbers_and_probability.md)
 
+---
+
 ### Notebooks examples
 
-- Descriptive Statistics ([Notebook](./notebooks/01_descriptive_statistics.ipynb))
+1. Descriptive Statistics ([Notebook](./notebooks/01_descriptive_statistics.ipynb))
 
-- Linear Regression ([Notebook](./notebooks/02_linear_regression.ipynb))
+2. Linear Regression ([Notebook](./notebooks/02_linear_regression.ipynb))
